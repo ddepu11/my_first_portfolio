@@ -506,8 +506,8 @@ footer {
   }
   .logo-container span {
     position: absolute;
-    left: 3.5%;
-    top: -7.5px;
+    left: 4.5%;
+    top: -4.8px;
     font-size: 2.5em;
   }
   .logo-container {
@@ -564,8 +564,8 @@ footer {
   }
   .cross {
     position: absolute;
-    top: 5px;
-    right: 15px;
+    top: 12px;
+    right: 17px;
   }
   .logo-container:after {
     content: "";
