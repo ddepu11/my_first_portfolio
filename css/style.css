@@ -32,7 +32,8 @@ body::before {
 
 section,
 nav,
-footer {
+footer,
+header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 12px 0px;
