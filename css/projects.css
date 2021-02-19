@@ -28,15 +28,15 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #f1f1f1;
+  background-color: #6b6969;
   width: 100%;
 }
 .p-footer a {
   display: block;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 800;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
