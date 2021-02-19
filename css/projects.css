@@ -31,13 +31,11 @@
   background-color: #6b6969;
   width: 100%;
 }
-.p-footer a {
-  display: block;
+.p-footer p {
   text-align: center;
   font-size: 1.4em;
   font-weight: 800;
   color: white;
-  text-decoration: none;
 }
 
 footer {
