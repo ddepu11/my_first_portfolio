@@ -43,7 +43,27 @@
 footer {
   padding: 5px 0px;
 }
+.f-lower-part {
+  justify-content: space-between;
+}
 
+@media (max-width: 980px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .logo-container {
+    flex-direction: row;
+  }
+  .logo-container span {
+    left: 22px;
+  }
+}
+@media (max-width: 545px) {
+  .logo-container span {
+    left: 13px;
+    top: -10px;
+  }
+}
 @media screen and (min-width: 600px) {
   .card-tall {
     grid-row: span 2 / auto;
@@ -65,5 +85,9 @@ footer {
   }
   .projects {
     margin-top: 0px;
+  }
+  .logo-container span {
+    left: 4.5%;
+    top: -6px;
   }
 }
