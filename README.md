@@ -10,14 +10,14 @@
 
 ## 1. Desktop view
 
-![desktop_view_1](https://github.com/ddepu11/PortFolio__Website/blob/main/snapshots/Desktop__1.png)
+![desktop_view_1](https://github.com/ddepu11/PortFolio__Website/blob/main/snapshots/desktop_1.png)
 
-![desktop_view_2](https://github.com/ddepu11/PortFolio__Website/blob/main/snapshots/Desktop__2.png)
+![desktop_view_2](https://github.com/ddepu11/PortFolio__Website/blob/main/snapshots/desktop_2.png)
 
 ## 2. Mobile view
 
-![mobile_view_1](https://github.com/ddepu11/PortFolio__Website/blob/main/snapshots/MobileView__1.png)
+![mobile_view_1](https://github.com/ddepu11/PortFolio__Website/blob/main/snapshots/mobileview_1.png)
 
-![mobile_view_2](https://github.com/ddepu11/PortFolio__Website/blob/main/snapshots/MobileView__2.png)
+![mobile_view_2](https://github.com/ddepu11/PortFolio__Website/blob/main/snapshots/mobileview_2.png)
 
-![mobile_view_3](https://github.com/ddepu11/PortFolio__Website/blob/main/snapshots/MobileView__3.png)
+![mobile_view_3](https://github.com/ddepu11/PortFolio__Website/blob/main/snapshots/mobileview_3.png)
