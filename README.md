@@ -4,7 +4,7 @@
 
 ** In this website i have shown my Projects, introduction about me and my resume. **
 
-# [Live Demo](https://ddepu11.github.io/PortFolio__Website/)
+# [Live Demo](https://deepanshu-tiwari-portfolio.netlify.app/)
 
 # Snapshots of the website
 
