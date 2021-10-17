@@ -1,0 +1,29 @@
+{
+  "parser": "@typescript-eslint/parser",
+
+  "plugins": ["@typescript-eslint"],
+
+  "extends": ["airbnb", "airbnb-typescript", "plugin:prettier/recommended"],
+
+  "env": {
+    "browser": true
+  },
+
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  },
+
+  "ignorePatterns": "webpack",
+
+  "settings": {
+    "react": {
+      "version": "17.0.2"
+    }
+  }
+}
