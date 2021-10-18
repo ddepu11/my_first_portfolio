@@ -21,7 +21,7 @@ const Wrapper = styled.nav`
   }
 `;
 
-const Navbar = () => {
+const Navbar = (): JSX.Element => {
   return (
     <Wrapper className='flex'>
       <div className='logo'>

@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import styled from 'styled-components';
 import person from '../images/person.svg';
 
@@ -33,7 +34,7 @@ const Wrapper = styled.main`
   }
 `;
 
-const Hero = () => {
+const Hero: FC = (): JSX.Element => {
   return (
     <Wrapper className='flex'>
       <div className='left'>
