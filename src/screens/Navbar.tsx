@@ -26,7 +26,7 @@ const Navbar = (): JSX.Element => {
     <Wrapper className='flex'>
       <div className='logo'>
         <Link to='/' className='text'>
-          DT
+          Deepanshu Tiwari
         </Link>
       </div>
 
