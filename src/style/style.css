@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 /*Utility class*/
 .flex {
@@ -25,8 +25,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+
 body {
   min-height: 100vh;
   background: linear-gradient(to right, #000000, #434343);
@@ -43,9 +44,11 @@ a {
   text-decoration: none;
   color: white;
 }
+
 ul {
   list-style-type: none;
 }
+
 button {
   border: 0;
 }
@@ -53,10 +56,17 @@ button {
 button:hover {
   cursor: pointer;
 }
+
 input {
   border: 0;
 }
+
 button:focus,
 input:focus {
   outline: 0;
+}
+
+.w-960 {
+  margin: 0 auto;
+  max-width: 960px;
 }

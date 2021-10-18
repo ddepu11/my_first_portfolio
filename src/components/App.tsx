@@ -1,40 +1,22 @@
-import { useState } from 'react';
 import styled from 'styled-components';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Navbar from '../screens/Navbar';
+import Home from '../screens/Home';
 
 const Wrapper = styled.main`
-  padding: 20px 20px;
-  flex-direction: column;
-
-  button {
-    margin-top: 20px;
-    font-size: 1em;
-    padding: 5px 10px;
-    border-radius: 10px;
-  }
+  padding: 00px 10px;
 `;
 
 const App = () => {
-  const [number, setNumber] = useState(0);
-
-  const increaseNumber = () => {
-    setNumber(number + 1);
-  };
-
-  const decreaseNumber = () => {
-    setNumber(number - 1);
-  };
-
   return (
-    <Wrapper className='flex'>
-      <h2>Number:&nbsp; {number}</h2>
+    <Wrapper className='w-960'>
+      <Router>
+        <Navbar />
 
-      <button type='button' onClick={increaseNumber}>
-        Increase
-      </button>
-
-      <button type='button' onClick={decreaseNumber}>
-        Decrease
-      </button>
+        <Route path='/'>
+          <Home />
+        </Route>
+      </Router>
     </Wrapper>
   );
 };
