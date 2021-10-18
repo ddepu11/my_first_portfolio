@@ -10,7 +10,7 @@ const Wrapper = styled.main`
 
 const App: FC = (): JSX.Element => {
   return (
-    <Wrapper className='w-960'>
+    <Wrapper className='w-1150'>
       <Router>
         <Navbar />
 
