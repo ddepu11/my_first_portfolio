@@ -1,4 +1,6 @@
-const projects = [
+import IProject from './interfaces';
+
+const projects: IProject[] = [
   {
     title: 'Movil Shop',
     description:
