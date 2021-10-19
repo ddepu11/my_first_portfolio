@@ -22,7 +22,7 @@ const projects: IProject[] = [
   {
     title: 'Sangeetmay',
     description:
-      "It's a Music Player web app it has features like Login, Signup, logout, Update account info, list songs and playlists, list likes songs, play/pause song, mute/unmute volume, like or dislike the song, Admin can upload and delete song with its image. Made it with TypeScript, React, Styled-components, Webpack 5, React-icons, Firebase. Also used Eslint for linting and Prettier for formating",
+      "It's a Music Player web app it has features like login, Signup, logout, Update account info, list songs and playlists, list liked songs, play/pause song, mute/unmute volume, like or dislike the song, Admin can upload and delete song with its image. Made it with TypeScript, React, Styled-components, Webpack 5, React-icons, Firebase. Also used Eslint for linting and Prettier for formating",
     liveLink: 'https://sangeetmay.netlify.app/',
     codeLink: 'https://github.com/ddepu11/sangeetmay',
     images: [
@@ -41,7 +41,7 @@ const projects: IProject[] = [
   {
     title: 'Chitransh',
     description:
-      "It's a social media web app where users can Login,Signup, Create post with caption  multiple images, like/dislike/save posts and  make a comment on it, search people, follow and unfollow people, see people profile with their following and followers list, update your profile pictures and account information, see people to follow suggestion list. Made it with React, Styled-components, Webpack 5, Material-icons, Firebase. Also used Eslint for linting and Prettier for formating ",
+      "It's a social media web app where users can login, signup, Create post with caption and upload multiple images, like/dislike/save posts and  make a comment on it, search people, follow and unfollow people, see people profile with their following and followers list, update your profile pictures and account information, see people to follow suggestion list. i have used tech like React, Styled-components, Webpack 5, Material-icons, Firebase. Also used Eslint for linting and Prettier for formating ",
     liveLink: 'https://chitransh.netlify.app/',
     codeLink: 'https://github.com/ddepu11/Chitransh',
     images: [
@@ -83,7 +83,7 @@ const projects: IProject[] = [
   {
     title: 'Social Chat Rooms',
     description:
-      "It's a simple messaging web app where people can create chat rooms and have chat with random people, users can login, signup, logout, update his account info. Made th app with React, Styled-components, Webpack 5, React-icons, Firebase. Also used Eslint for linting and  Prettier for formating.",
+      "It's a simple messaging web app where people can create chat rooms and have chat with random people, users can login, signup, logout, update his account info. Made it with React, Styled-components, Webpack 5, React-icons, Firebase. Also used Eslint for linting and  Prettier for formating.",
     liveLink: 'https://social-chat-rooms.netlify.app/',
     codeLink: 'https://github.com/ddepu11/social_chat_rooms',
     images: [
