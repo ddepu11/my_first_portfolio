@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 import KeyboardArrowLeftOutlinedIcon from '@mui/icons-material/KeyboardArrowLeftOutlined';
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import { IProject } from '../interfaces';
 
 const Wrapper = styled.div`
@@ -85,6 +86,23 @@ const Wrapper = styled.div`
 
     .left_arrow {
       left: 5px;
+    }
+
+    .index_dots {
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      width: 100%;
+      background: #2b2b2b33;
+
+      .dot {
+        font-size: 0.5em;
+        margin-right: 5px;
+      }
+
+      .dot.active {
+        color: #1b1b1b;
+      }
     }
 
     .loading_cover {
@@ -197,6 +215,14 @@ const Project = ({ item, index, arrLength }: ProjectType): JSX.Element => {
             <h1>Loading...</h1>
           </div>
         )}
+
+        <div className='index_dots flex'>
+          {item.images.map((im, imIndex) => (
+            <FiberManualRecordIcon
+              className={`dot ${imageIndex === imIndex && 'active'}`}
+            />
+          ))}
+        </div>
       </div>
     </Wrapper>
   );
