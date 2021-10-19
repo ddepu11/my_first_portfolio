@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
+import KeyboardArrowLeftOutlinedIcon from '@mui/icons-material/KeyboardArrowLeftOutlined';
 import IProject from '../interfaces';
 
 const Wrapper = styled.div`
@@ -47,11 +49,31 @@ const Wrapper = styled.div`
   .images {
     width: 50%;
     height: 350px;
+    position: relative;
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    .left_arrow,
+    .right_arrow {
+      position: absolute;
+      top: 45%;
+      right: 5px;
+      background: #dfdede;
+      border-radius: 50%;
+      color: #222222;
+      font-size: 1.1em;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .left_arrow {
+      left: 5px;
     }
   }
 `;
@@ -59,12 +81,25 @@ const Wrapper = styled.div`
 const Project = ({ item }: { item: IProject }): JSX.Element => {
   const [imageIndex, setImageIndex] = useState(0);
 
+  console.log(item);
   const showNextImage = () => {
-    setImageIndex((prevState) => prevState + 1);
+    setImageIndex((prevState) => {
+      if (prevState === item.images.length - 1) {
+        return 0;
+      }
+
+      return prevState + 1;
+    });
   };
 
   const showPreviousImage = () => {
-    setImageIndex((prevState) => prevState - 1);
+    setImageIndex((prevState) => {
+      if (prevState === 0) {
+        return item.images.length - 1;
+      }
+
+      return prevState - 1;
+    });
   };
 
   return (
@@ -87,6 +122,16 @@ const Project = ({ item }: { item: IProject }): JSX.Element => {
 
       <div className='images'>
         <img src={item.images[imageIndex]} alt='portfolio' />
+
+        <KeyboardArrowLeftOutlinedIcon
+          className='left_arrow'
+          onClick={showPreviousImage}
+        />
+
+        <KeyboardArrowRightOutlinedIcon
+          className='right_arrow'
+          onClick={showNextImage}
+        />
       </div>
     </Wrapper>
   );
