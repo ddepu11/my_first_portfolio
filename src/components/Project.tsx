@@ -56,7 +56,7 @@ const Wrapper = styled.div`
     position: relative;
     border-radius: 5px;
     overflow: hidden;
-    transition: transform 250ms ease-in;
+    transition: transform 0.5s ease;
 
     &:hover {
       transform: scale(1.1) translateY(-10px);
