@@ -6,16 +6,15 @@ import Home from '../screens/Home';
 import { IDirrerentRefs } from '../interfaces';
 
 const Wrapper = styled.main`
-  padding: 00px 10px;
+  padding: 00px 15px 3em;
 `;
-
-// deepanshutiwari
 
 const App: FC = (): JSX.Element => {
   const refs: IDirrerentRefs = {
     projectsRef: useRef(null),
     aboutRef: useRef(null),
     connectRef: useRef(null),
+    skillsRef: useRef(null),
   };
 
   return (
