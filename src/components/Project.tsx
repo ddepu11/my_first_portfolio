@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   margin-bottom: 10em;
   /* border: 1px solid red; */
+  align-items: flex-start;
 
   .left {
     width: 40%;
@@ -55,6 +56,11 @@ const Wrapper = styled.div`
     position: relative;
     border-radius: 5px;
     overflow: hidden;
+    transition: transform 250ms ease-in;
+
+    &:hover {
+      transform: scale(1.1) translateY(-10px);
+    }
 
     img {
       width: 100%;
