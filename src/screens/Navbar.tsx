@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { IDirrerentRefs } from '../interfaces';
 
 const Wrapper = styled.nav`
+  padding: 20px 10px;
   justify-content: space-between;
-  padding: 20px 0;
+
+  border-radius: 5px;
 
   .logo {
     .text {
@@ -28,7 +30,7 @@ const Wrapper = styled.nav`
 const Navbar = ({ refs }: { refs: IDirrerentRefs }): JSX.Element => {
   const scrollToProjects = (): void => {
     if (refs.projectsRef.current) {
-      refs.projectsRef.current.scrollIntoView();
+      refs.projectsRef.current.scrollIntoView({});
     }
   };
 

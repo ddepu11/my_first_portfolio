@@ -6,7 +6,6 @@ import { IProject } from '../interfaces';
 
 const Wrapper = styled.section`
   /* border: 1px solid red; */
-  margin-top: 40px;
 
   .heading {
     font-size: 2em;

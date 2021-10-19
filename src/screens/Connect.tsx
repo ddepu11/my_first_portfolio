@@ -26,6 +26,7 @@ const Wrapper = styled.section`
 
       &:hover {
         cursor: pointer;
+        border-bottom: 2px solid #2648d1;
       }
     }
   }
