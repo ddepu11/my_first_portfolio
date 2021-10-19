@@ -15,7 +15,7 @@ const App: FC = (): JSX.Element => {
   const refs: IDirrerentRefs = {
     projectsRef: useRef(null),
     aboutRef: useRef(null),
-    accountRef: useRef(null),
+    connectRef: useRef(null),
   };
 
   return (

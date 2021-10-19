@@ -11,5 +11,5 @@ export interface IProject {
 export interface IDirrerentRefs {
   projectsRef: RefObject<HTMLElement | null>;
   aboutRef: RefObject<HTMLElement | null>;
-  accountRef: RefObject<HTMLElement | null>;
+  connectRef: RefObject<HTMLElement | null>;
 }

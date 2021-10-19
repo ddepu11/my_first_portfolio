@@ -38,6 +38,12 @@ const Navbar = ({ refs }: { refs: IDirrerentRefs }): JSX.Element => {
     }
   };
 
+  const scrollToConnect = (): void => {
+    if (refs.connectRef.current) {
+      refs.connectRef.current.scrollIntoView();
+    }
+  };
+
   return (
     <Wrapper className='flex'>
       <div className='logo'>
@@ -50,23 +56,21 @@ const Navbar = ({ refs }: { refs: IDirrerentRefs }): JSX.Element => {
         <div className='links_inner_div'>
           <ul className='flex'>
             <li>
-              <button
-                type='button'
-                data-ref='projects'
-                onClick={scrollToProjects}
-              >
+              <button type='button' onClick={scrollToProjects}>
                 Projects
               </button>
             </li>
 
             <li>
-              <button type='button' data-ref='about' onClick={scrollToAbout}>
+              <button type='button' onClick={scrollToAbout}>
                 About
               </button>
             </li>
 
             <li>
-              <button type='button'>Connect</button>
+              <button type='button' onClick={scrollToConnect}>
+                Connect
+              </button>
             </li>
           </ul>
         </div>
