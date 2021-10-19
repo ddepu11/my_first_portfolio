@@ -4,7 +4,7 @@ import person from '../images/person.svg';
 
 const Wrapper = styled.main`
   justify-content: space-around;
-  height: 85vh;
+  height: 90vh;
 
   .left {
     /* border: 1px dashed #a5a5a5; */

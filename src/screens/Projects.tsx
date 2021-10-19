@@ -5,7 +5,8 @@ import Project from '../components/Project';
 import { IProject } from '../interfaces';
 
 const Wrapper = styled.section`
-  margin-top: 80px;
+  /* border: 1px solid red; */
+  margin-top: 40px;
 
   .heading {
     font-size: 2em;
@@ -13,7 +14,7 @@ const Wrapper = styled.section`
     letter-spacing: 2px;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
   }
 `;
 

@@ -4,17 +4,21 @@ import displayPicture from '../images/displayPicture.jpg';
 
 const Wrapper = styled.section`
   flex-direction: column;
+  height: 90vh;
+  /* border: 1px solid #2648d1; */
 
   .heading {
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
+    text-align: center;
+    margin-top: 15px;
   }
 
   .main {
     justify-content: space-around;
-    margin-top: 40px;
+    margin-top: 150px;
 
     .image {
       width: 300px;
@@ -57,7 +61,7 @@ const Wrapper = styled.section`
 
 const About = forwardRef<HTMLElement | null>((props, ref) => {
   return (
-    <Wrapper className='flex' id='about' ref={ref}>
+    <Wrapper className='' id='about' ref={ref}>
       <h1 className='heading'>About me</h1>
 
       <div className='main flex'>
