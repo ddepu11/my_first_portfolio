@@ -12,4 +12,5 @@ export interface IDirrerentRefs {
   projectsRef: RefObject<HTMLElement | null>;
   aboutRef: RefObject<HTMLElement | null>;
   connectRef: RefObject<HTMLElement | null>;
+  skillsRef: RefObject<HTMLElement | null>;
 }

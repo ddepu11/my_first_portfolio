@@ -20,11 +20,16 @@ const Wrapper = styled.section`
 
 const Projects = forwardRef<HTMLElement | null>((props, ref) => {
   return (
-    <Wrapper id='projects' ref={ref}>
+    <Wrapper ref={ref}>
       <h1 className='heading'>Projects</h1>
 
-      {projects.map((item: IProject) => (
-        <Project item={item} key={item.title} />
+      {projects.map((item: IProject, index) => (
+        <Project
+          item={item}
+          key={item.title}
+          index={index}
+          arrLength={projects.length}
+        />
       ))}
     </Wrapper>
   );

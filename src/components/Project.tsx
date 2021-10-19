@@ -6,7 +6,8 @@ import { IProject } from '../interfaces';
 
 const Wrapper = styled.div`
   justify-content: space-between;
-  margin-bottom: 120px;
+  margin-bottom: 10em;
+  /* border: 1px solid red; */
 
   .left {
     width: 40%;
@@ -98,9 +99,15 @@ const Wrapper = styled.div`
     }
   }
 `;
+type ProjectType = {
+  item: IProject;
+  index: number;
+  arrLength: number;
+};
 
-const Project = ({ item }: { item: IProject }): JSX.Element => {
+const Project = ({ item, index, arrLength }: ProjectType): JSX.Element => {
   const [imageIndex, setImageIndex] = useState(0);
+
   const [loading, setLoading] = useState(false);
 
   const showNextImage = () => {
@@ -131,7 +138,11 @@ const Project = ({ item }: { item: IProject }): JSX.Element => {
   const handleImageLoad = () => setLoading(false);
 
   return (
-    <Wrapper key={item.title} className='projects flex'>
+    <Wrapper
+      key={item.title}
+      className='flex'
+      style={{ marginBottom: `${index === arrLength - 1 && '5em'}` }}
+    >
       <div className='left'>
         <h1 className='title'>{item.title}</h1>
 

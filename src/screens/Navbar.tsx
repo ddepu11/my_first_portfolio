@@ -44,6 +44,12 @@ const Navbar = ({ refs }: { refs: IDirrerentRefs }): JSX.Element => {
     }
   };
 
+  const scrollToSkills = (): void => {
+    if (refs.connectRef.current) {
+      refs.connectRef.current.scrollIntoView();
+    }
+  };
+
   return (
     <Wrapper className='flex'>
       <div className='logo'>
@@ -64,6 +70,12 @@ const Navbar = ({ refs }: { refs: IDirrerentRefs }): JSX.Element => {
             <li>
               <button type='button' onClick={scrollToAbout}>
                 About
+              </button>
+            </li>
+
+            <li>
+              <button type='button' onClick={scrollToSkills}>
+                Skills
               </button>
             </li>
 
