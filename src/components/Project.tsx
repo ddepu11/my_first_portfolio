@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 import KeyboardArrowLeftOutlinedIcon from '@mui/icons-material/KeyboardArrowLeftOutlined';
-import IProject from '../interfaces';
+import { IProject } from '../interfaces';
 
 const Wrapper = styled.div`
   justify-content: space-between;

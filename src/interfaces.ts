@@ -1,4 +1,6 @@
-interface IProject {
+import type { RefObject } from 'react';
+
+export interface IProject {
   title: string;
   description: string;
   liveLink: string;
@@ -6,4 +8,8 @@ interface IProject {
   images: string[];
 }
 
-export default IProject;
+export interface IDirrerentRefs {
+  projectsRef: RefObject<HTMLElement | null>;
+  aboutRef: RefObject<HTMLElement | null>;
+  accountRef: RefObject<HTMLElement | null>;
+}

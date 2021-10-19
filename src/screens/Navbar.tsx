@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { IDirrerentRefs } from '../interfaces';
 
 const Wrapper = styled.nav`
   justify-content: space-between;
@@ -24,7 +25,19 @@ const Wrapper = styled.nav`
   }
 `;
 
-const Navbar = (): JSX.Element => {
+const Navbar = ({ refs }: { refs: IDirrerentRefs }): JSX.Element => {
+  const scrollToProjects = (): void => {
+    if (refs.projectsRef.current) {
+      refs.projectsRef.current.scrollIntoView();
+    }
+  };
+
+  const scrollToAbout = (): void => {
+    if (refs.aboutRef.current) {
+      refs.aboutRef.current.scrollIntoView();
+    }
+  };
+
   return (
     <Wrapper className='flex'>
       <div className='logo'>
@@ -37,11 +50,19 @@ const Navbar = (): JSX.Element => {
         <div className='links_inner_div'>
           <ul className='flex'>
             <li>
-              <button type='button'>Projects</button>
+              <button
+                type='button'
+                data-ref='projects'
+                onClick={scrollToProjects}
+              >
+                Projects
+              </button>
             </li>
 
             <li>
-              <button type='button'>About</button>
+              <button type='button' data-ref='about' onClick={scrollToAbout}>
+                About
+              </button>
             </li>
 
             <li>

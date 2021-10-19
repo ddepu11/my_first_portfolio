@@ -1,7 +1,8 @@
-import { FC } from 'react';
+import { forwardRef } from 'react';
 import styled from 'styled-components';
 import projects from '../projects';
 import Project from '../components/Project';
+import { IProject } from '../interfaces';
 
 const Wrapper = styled.section`
   margin-top: 80px;
@@ -16,16 +17,16 @@ const Wrapper = styled.section`
   }
 `;
 
-const Projects: FC = (): JSX.Element => {
+const Projects = forwardRef<HTMLElement | null>((props, ref) => {
   return (
-    <Wrapper id='projects'>
+    <Wrapper id='projects' ref={ref}>
       <h1 className='heading'>Projects</h1>
 
-      {projects.map((item) => (
+      {projects.map((item: IProject) => (
         <Project item={item} key={item.title} />
       ))}
     </Wrapper>
   );
-};
+});
 
 export default Projects;

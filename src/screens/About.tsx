@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { forwardRef } from 'react';
 import styled from 'styled-components';
 import displayPicture from '../images/displayPicture.jpg';
 
@@ -55,9 +55,9 @@ const Wrapper = styled.section`
   }
 `;
 
-const About: FC = (): JSX.Element => {
+const About = forwardRef<HTMLElement | null>((props, ref) => {
   return (
-    <Wrapper className='flex' id='about'>
+    <Wrapper className='flex' id='about' ref={ref}>
       <h1 className='heading'>About me</h1>
 
       <div className='main flex'>
@@ -73,7 +73,7 @@ const About: FC = (): JSX.Element => {
             Redux-Toolkit. I have also interests in yoga, space and rockets.
           </p>
 
-          <p className='second'>Currently I am preparing for job interviews</p>
+          <p className='second'>Currently preparing for job interviews</p>
 
           <a href='/' className='resume_link'>
             Resume
@@ -82,6 +82,6 @@ const About: FC = (): JSX.Element => {
       </div>
     </Wrapper>
   );
-};
+});
 
 export default About;
