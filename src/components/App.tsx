@@ -13,20 +13,23 @@ const Wrapper = styled.main`
   .scroll_to_top {
     position: fixed;
     bottom: 5px;
-    left: 50%;
+    right: 5%;
     display: grid;
     place-items: center;
     z-index: 5;
 
-    &:hover {
-      cursor: pointer;
-    }
-
     .icon {
-      font-size: 1.8em;
+      font-size: 1.9em;
       background: #aaa;
       border-radius: 50%;
       color: #242424;
+      transition: all 0.25s ease-in;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #2648d1;
+        color: #f1f1f1;
+      }
     }
   }
 `;

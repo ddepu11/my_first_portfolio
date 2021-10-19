@@ -16,7 +16,7 @@ const Wrapper = styled.nav`
   }
 
   .links_inner_div ul li {
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   .links_inner_div ul li button {
@@ -24,6 +24,13 @@ const Wrapper = styled.nav`
     font-weight: 300;
     background: transparent;
     color: #ffffff;
+    transition: all 0.25s ease-in;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #2648d1;
+    }
   }
 `;
 
