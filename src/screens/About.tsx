@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import styled from 'styled-components';
+import displayPicture from '../images/displayPicture.jpg';
 
 const Wrapper = styled.section`
   flex-direction: column;
@@ -12,11 +13,24 @@ const Wrapper = styled.section`
   }
 
   .main {
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 40px;
+
+    .image {
+      width: 300px;
+      height: 300px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
 
     .intro {
       width: 60%;
+      font-weight: 300;
+
       /* border: 1px solid red; */
       p {
         line-height: 1.8;
@@ -43,12 +57,12 @@ const Wrapper = styled.section`
 
 const About: FC = (): JSX.Element => {
   return (
-    <Wrapper className='flex'>
+    <Wrapper className='flex' id='about'>
       <h1 className='heading'>About me</h1>
 
       <div className='main flex'>
         <div className='image'>
-          <img src='https://i.pravatar.cc/300' alt='' />
+          <img src={displayPicture} alt='' />
         </div>
 
         <div className='intro'>

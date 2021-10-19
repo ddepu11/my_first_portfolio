@@ -18,7 +18,7 @@ const Wrapper = styled.section`
 
 const Projects: FC = (): JSX.Element => {
   return (
-    <Wrapper>
+    <Wrapper id='projects'>
       <h1 className='heading'>Projects</h1>
 
       {projects.map((item) => (

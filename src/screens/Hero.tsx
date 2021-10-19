@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import person from '../images/person.svg';
 
 const Wrapper = styled.main`
-  justify-content: space-between;
+  justify-content: space-around;
   height: 85vh;
-  /* border: 1px dashed #a5a5a5; */
 
   .left {
+    /* border: 1px dashed #a5a5a5; */
+    width: 50%;
+
     h1 {
       font-size: 4.5em;
       font-weight: 400;

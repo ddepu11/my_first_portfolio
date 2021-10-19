@@ -8,6 +8,7 @@ const Wrapper = styled.nav`
   .logo {
     .text {
       font-size: 1em;
+      font-weight: 300;
     }
   }
 
@@ -15,9 +16,11 @@ const Wrapper = styled.nav`
     margin-left: 30px;
   }
 
-  .links_inner_div ul li a {
+  .links_inner_div ul li button {
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 300;
+    background: transparent;
+    color: #ffffff;
   }
 `;
 
@@ -34,15 +37,15 @@ const Navbar = (): JSX.Element => {
         <div className='links_inner_div'>
           <ul className='flex'>
             <li>
-              <Link to='/'>Work</Link>
+              <button type='button'>Projects</button>
             </li>
 
             <li>
-              <Link to='/'>About</Link>
+              <button type='button'>About</button>
             </li>
 
             <li>
-              <Link to='/'>Connect</Link>
+              <button type='button'>Connect</button>
             </li>
           </ul>
         </div>
