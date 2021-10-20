@@ -54,8 +54,8 @@ const Navbar = ({ refs }: { refs: IDirrerentRefs }): JSX.Element => {
   };
 
   const scrollToSkills = (): void => {
-    if (refs.connectRef.current) {
-      refs.connectRef.current.scrollIntoView();
+    if (refs.skillsRef.current) {
+      refs.skillsRef.current.scrollIntoView();
     }
   };
 

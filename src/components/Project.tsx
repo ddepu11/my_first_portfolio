@@ -123,6 +123,7 @@ const Wrapper = styled.div`
     }
   }
 `;
+
 type ProjectType = {
   item: IProject;
   index: number;
@@ -163,7 +164,6 @@ const Project = ({ item, index, arrLength }: ProjectType): JSX.Element => {
 
   return (
     <Wrapper
-      key={item.title}
       className='flex'
       style={{ marginBottom: `${index === arrLength - 1 && '5em'}` }}
     >
@@ -219,6 +219,7 @@ const Project = ({ item, index, arrLength }: ProjectType): JSX.Element => {
         <div className='index_dots flex'>
           {item.images.map((im, imIndex) => (
             <FiberManualRecordIcon
+              key={Math.floor(Math.random() * Date.now())}
               className={`dot ${imageIndex === imIndex && 'active'}`}
             />
           ))}

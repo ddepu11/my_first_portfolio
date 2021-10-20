@@ -34,6 +34,15 @@ const Wrapper = styled.main`
       }
     }
   }
+
+  @media only screen and (max-width: 820px) {
+    flex-direction: column;
+
+    .left {
+      width: 100%;
+      text-align: center;
+    }
+  }
 `;
 
 const Hero: FC = (): JSX.Element => {

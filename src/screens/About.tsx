@@ -57,6 +57,13 @@ const Wrapper = styled.section`
       }
     }
   }
+
+  @media only screen and (max-width: 820px) {
+    .main {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+  }
 `;
 
 const About = forwardRef<HTMLElement | null>((props, ref) => {
