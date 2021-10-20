@@ -58,7 +58,7 @@ const Wrapper = styled.section`
         text-align: center;
 
         span {
-          font-size: 18px;
+          font-size: 12px;
           color: #d3d3d3;
           font-weight: 600;
           text-transform: uppercase;
