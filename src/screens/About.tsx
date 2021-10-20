@@ -62,6 +62,12 @@ const Wrapper = styled.section`
     .main {
       flex-direction: column;
       margin-top: 30px;
+
+      .intro {
+        text-align: center;
+        margin-top: 40px;
+        width: 100%;
+      }
     }
   }
 `;

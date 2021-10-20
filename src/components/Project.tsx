@@ -122,6 +122,36 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media only screen and (max-width: 820px) {
+    flex-direction: column-reverse;
+    margin-bottom: 5em;
+    border-bottom: 1px dashed #4d4d4d;
+
+    .left,
+    .images {
+      width: 100%;
+    }
+
+    .left {
+      margin-top: 40px;
+
+      .btns {
+        /* border: 1px solid red; */
+        margin-bottom: 10px;
+
+        a {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .images {
+      &:hover {
+        transform: scale(1) translateY(-2px);
+      }
+    }
+  }
 `;
 
 type ProjectType = {

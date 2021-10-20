@@ -13,7 +13,13 @@ const Wrapper = styled.section`
     letter-spacing: 2px;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 3.3em;
+  }
+
+  @media only screen and (max-width: 820px) {
+    .heading {
+      margin-bottom: 2em;
+    }
   }
 `;
 

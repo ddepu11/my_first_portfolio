@@ -37,10 +37,19 @@ const Wrapper = styled.main`
 
   @media only screen and (max-width: 820px) {
     flex-direction: column;
+    margin-top: 10px;
 
     .left {
       width: 100%;
       text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 590px) {
+    .left {
+      h1 {
+        font-size: 4em;
+      }
     }
   }
 `;
