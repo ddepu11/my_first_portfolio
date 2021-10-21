@@ -9,6 +9,7 @@ import {
   SiTypescript,
   SiStyledcomponents,
 } from 'react-icons/si';
+import { DiGit } from 'react-icons/di';
 import { FaHtml5 } from 'react-icons/fa';
 import styled from 'styled-components';
 
@@ -121,6 +122,13 @@ const Skills = forwardRef<HTMLElement | null>((props, ref) => {
           <SiJavascript />
           <div className='cover'>
             <span>JavaScript</span>
+          </div>
+        </div>
+
+        <div className='git'>
+          <DiGit />
+          <div className='cover'>
+            <span>Git</span>
           </div>
         </div>
 
