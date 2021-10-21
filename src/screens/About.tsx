@@ -4,7 +4,7 @@ import displayPicture from '../images/displayPicture.jpg';
 
 const Wrapper = styled.section`
   flex-direction: column;
-  height: 90vh;
+  min-height: 90vh;
   /* border: 1px solid #2648d1; */
 
   .heading {
@@ -21,7 +21,7 @@ const Wrapper = styled.section`
     margin-top: 150px;
 
     .image {
-      width: 300px;
+      max-width: 300px;
       height: 300px;
 
       img {
@@ -67,6 +67,20 @@ const Wrapper = styled.section`
         text-align: center;
         margin-top: 40px;
         width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 20px;
+    .main {
+      .intro {
+        p {
+          line-height: 1.6;
+        }
+        .second {
+          margin-top: 5px;
+        }
       }
     }
   }
