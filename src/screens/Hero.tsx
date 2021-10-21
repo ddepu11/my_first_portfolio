@@ -4,7 +4,7 @@ import person from '../images/person.svg';
 
 const Wrapper = styled.main`
   justify-content: space-around;
-  height: 90vh;
+  min-height: 90vh;
 
   .left {
     /* border: 1px dashed #a5a5a5; */
@@ -24,7 +24,7 @@ const Wrapper = styled.main`
 
   .right {
     .pic {
-      width: 350px;
+      max-width: 350px;
       height: 350px;
 
       img {
@@ -49,6 +49,17 @@ const Wrapper = styled.main`
     .left {
       h1 {
         font-size: 4em;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .left {
+      h1 {
+        font-size: 3em;
+      }
+      span {
+        font-size: 0.9em;
       }
     }
   }
