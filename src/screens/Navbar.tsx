@@ -47,7 +47,7 @@ const Wrapper = styled.nav`
   }
 
   .links_outer_div {
-    transition: height 250ms ease-in;
+    transition: height 500ms ease;
   }
 
   @media only screen and (max-width: 590px) {
