@@ -106,7 +106,12 @@ const About = forwardRef<HTMLElement | null>((props, ref) => {
 
           <p className='second'>Currently preparing for job interviews</p>
 
-          <a href='/' className='resume_link'>
+          <a
+            href='https://drive.google.com/file/d/1DMLOC8Jl2vkeFGhfy1wj2gEaZPbMA-Ny/view?usp=sharing'
+            className='resume_link'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             Resume
           </a>
         </div>
