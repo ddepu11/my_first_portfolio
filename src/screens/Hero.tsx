@@ -70,7 +70,7 @@ const Hero: FC = (): JSX.Element => {
     <Wrapper className='flex'>
       <div className='left'>
         <h1>Hi I&apos;am Deepanshu</h1>
-        <span>A Passionate Front End Web Developer</span>
+        <span>A Passionate Full Stack Web Developer</span>
       </div>
 
       <div className='right'>
