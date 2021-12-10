@@ -99,7 +99,7 @@ const About = forwardRef<HTMLElement | null>((props, ref) => {
         <div className='intro'>
           <p>
             I’m a Front End Developer from India, experienced in building
-            responsive, user fiendly, accessible websites and web applications
+            responsive, user friendly, accessible websites and web applications
             using React, TypeScript, JavaScript, Styled-Components, Webpack,
             Redux-Toolkit. I have also interests in yoga, space and rockets.
           </p>
