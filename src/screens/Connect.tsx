@@ -39,7 +39,7 @@ const Connect = forwardRef<HTMLElement | null>((props, ref) => {
 
       <div className='icons flex'>
         <a
-          href='https://twitter.com/Deepu07192814'
+          href='https://twitter.com/ddepu11'
           target='_blank'
           rel='noopener noreferrer'
         >
