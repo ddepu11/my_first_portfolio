@@ -103,11 +103,9 @@ const About = forwardRef<HTMLElement | null>((props, ref) => {
             using React, TypeScript, JavaScript, Styled-Components, Webpack,
             Redux-Toolkit. I have also interests in yoga, space and rockets.
           </p>
-
           <p className='second'>Currently preparing for job interviews</p>
-
           <a
-            href='https://drive.google.com/file/d/1WQE8QR0NM0Kn7gYmTGnUUIjEJJvbvMf0/view?usp=sharing'
+            href='https://drive.google.com/file/d/1vriLFlEsRyiiKI6QvBj-pKHcwmmFx7Tn/view?usp=sharing'
             className='resume_link'
             target='_blank'
             rel='noopener noreferrer'
