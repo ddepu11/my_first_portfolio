@@ -98,12 +98,15 @@ const About = forwardRef<HTMLElement | null>((props, ref) => {
 
         <div className='intro'>
           <p>
-            I’m a Full Stack Web Developer from India, experienced in building
-            responsive, user friendly, accessible websites and web applications
-            using React, TypeScript, JavaScript, Styled-Components, Webpack,
-            Redux-Toolkit. I have also interests in yoga, space and rockets.
+            As an experienced developer, I specialize in building responsive and
+            user-friendly web and mobile applications. With expertise in
+            technologies such as React, React Native, TypeScript, JavaScript,
+            and Redux, I have a proven track record of delivering high-quality
+            solutions. My passion for innovation and commitment to excellence
+            drive me to continually learn and explore new technologies. I am
+            dedicated to crafting intuitive and efficient solutions that meet
+            the needs of users and businesses alike.
           </p>
-          <p className='second'>Currently preparing for job interviews</p>
           <a
             href='https://drive.google.com/file/d/1vriLFlEsRyiiKI6QvBj-pKHcwmmFx7Tn/view?usp=sharing'
             className='resume_link'
