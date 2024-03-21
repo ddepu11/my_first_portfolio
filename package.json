@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "packageManager": "yarn@3.2.4",
   "scripts": {
     "build": "webpack --config ./webpack/webpack.config.js --env env=prod",
     "start": "webpack serve --open --config ./webpack/webpack.config.js --env env=dev",
