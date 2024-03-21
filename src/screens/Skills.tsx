@@ -1,13 +1,14 @@
 import { forwardRef } from 'react';
 import {
   SiWebpack,
-  SiBabel,
   SiJavascript,
   SiCss3,
-  SiPrettier,
-  SiEslint,
   SiTypescript,
   SiStyledcomponents,
+  SiReact,
+  SiExpo,
+  SiAndroidstudio,
+  SiXcode,
 } from 'react-icons/si';
 import { DiGit } from 'react-icons/di';
 import { FaHtml5 } from 'react-icons/fa';
@@ -36,7 +37,8 @@ const Wrapper = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: rgba(28, 73, 170, 0.3) 0px 1px 2px 0px,
+      box-shadow:
+        rgba(28, 73, 170, 0.3) 0px 1px 2px 0px,
         rgba(12, 118, 199, 0.15) 0px 2px 5px 2px;
       padding: 15px;
       position: relative;
@@ -87,11 +89,10 @@ const Skills = forwardRef<HTMLElement | null>((props, ref) => {
       <h1 className='heading'>Skills </h1>
 
       <div className='skills flex'>
-        <div className='styled-components'>
-          <SiStyledcomponents />
-
+        <div className='js'>
+          <SiJavascript />
           <div className='cover'>
-            <span>styled-components</span>
+            <span>JavaScript</span>
           </div>
         </div>
 
@@ -103,25 +104,32 @@ const Skills = forwardRef<HTMLElement | null>((props, ref) => {
           </div>
         </div>
 
+        <div className='react'>
+          <SiReact />
+          <div className='cover'>
+            <span>React</span>
+          </div>
+        </div>
+
+        <div className='react-native'>
+          <SiReact />
+          <div className='cover'>
+            <span>React Native</span>
+          </div>
+        </div>
+
+        <div className='expo'>
+          <SiExpo />
+          <div className='cover'>
+            <span>Expo</span>
+          </div>
+        </div>
+
         <div className='webpack'>
           <SiWebpack />
 
           <div className='cover'>
             <span>Webpack</span>
-          </div>
-        </div>
-
-        <div className='babel'>
-          <SiBabel />
-          <div className='cover'>
-            <span>babel</span>
-          </div>
-        </div>
-
-        <div className='js'>
-          <SiJavascript />
-          <div className='cover'>
-            <span>JavaScript</span>
           </div>
         </div>
 
@@ -146,17 +154,27 @@ const Skills = forwardRef<HTMLElement | null>((props, ref) => {
           </div>
         </div>
 
-        <div className='prettier'>
-          <SiPrettier />
+        <div className='styled-components'>
+          <SiStyledcomponents />
+
           <div className='cover'>
-            <span>prettier</span>
+            <span>styled-components</span>
           </div>
         </div>
 
-        <div className='eslint'>
-          <SiEslint />
+        <div className='android-studio'>
+          <SiAndroidstudio />
+
           <div className='cover'>
-            <span>eslint</span>
+            <span>Android Studio</span>
+          </div>
+        </div>
+
+        <div className='android-studio'>
+          <SiXcode />
+
+          <div className='cover'>
+            <span>XCode</span>
           </div>
         </div>
       </div>

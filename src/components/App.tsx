@@ -1,6 +1,6 @@
 import { FC, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import Navbar from '../screens/Navbar';
 import Home from '../screens/Home';
@@ -73,10 +73,9 @@ const App: FC = (): JSX.Element => {
 
       <Router>
         <Navbar refs={refs} />
-
-        <Route path='/'>
-          <Home refs={refs} />
-        </Route>
+        <Routes>
+          <Route path='/' element={<Home refs={refs} />} />
+        </Routes>
       </Router>
     </Wrapper>
   );
