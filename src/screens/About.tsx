@@ -108,7 +108,7 @@ const About = forwardRef<HTMLElement | null>((props, ref) => {
             the needs of users and businesses alike.
           </p>
           <a
-            href='https://drive.google.com/file/d/1qutfxeOMU82m64cfauoDUsUzBR-pEHp2/view?usp=sharing'
+            href='https://drive.google.com/file/d/1e_BtYEg3sW6ilzE4Q9ftlp-18ch7Htl-/view?usp=sharing'
             className='resume_link'
             target='_blank'
             rel='noopener noreferrer'
